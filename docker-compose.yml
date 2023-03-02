@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+
+  flasky:
+    image: flasky
+    container_name: flasky
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
